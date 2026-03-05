@@ -1,0 +1,9 @@
+{
+	"casename":"case123",
+	"model_path":"di_model-nodeload-123Bus_m-Feb_w-4_f-5_c-0.05-lstm_vsolarhome",
+	"model_format":"tfsm",
+	"monitored_nodes":["s100c","s102c"],
+	"initial_measurements":{"s100c":10.0,"s102c":10.0},
+	"window_size":4,
+	"input_features":["load_value_corrupted","load_value_corrupted_ffill","corruption_encoding","cos_hour","sin_hour"]
+}

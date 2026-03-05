@@ -1,0 +1,33 @@
+{
+
+"nodeload_data_details":{
+"selected_timeseries_files":["data/solarhome/solarhome_customers-300_days-365.csv"],
+"selected_month":2,
+"distribution_system":"13Bus",
+"distribution_system_file":"/home/oedi/Documents/dev/github/oedisi/scratch/scratch_oedi-si-single-container/build/datapreprocessor/datapreprocessor/datapreprocessor/data/opendss/13Bus/case13ZIP.dss",
+"measurement_column":"load_value",
+"load_scaling_mode":"simple",
+"upsample_original_time_series":true,
+"upsample_time_period":"15Min"},
+
+"train_data_details":{
+"corrupted_fraction":0.05,
+"consequtive_corruption_probabilities":{"two":{"conditional_probability":0.2},
+                                        "three":{"conditional_probability":0.1},
+                                        "four":{"conditional_probability":0.05}},
+"replacement_methods":["ffill"],
+"cyclical_features":["hour_of_day","day_of_week","weekend"],
+"n_days": 2,
+"n_nodes":10,
+"window_size":4},
+
+"model_arch_details":{
+"model_type":"1dcnn"
+},
+
+"model_training_details":{"n_epochs":1,
+"batch_size": 32,
+"convert_to_tflite":false,
+"model_identifier":"vsolarhome"}
+
+}

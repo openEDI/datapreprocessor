@@ -1,0 +1,18 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I"]
+ignore = []
+
+exclude = [
+    ".git",
+    ".ruff_cache",
+    "venv",
+    ".venv"
+]
+
+[format]
+quote-style = "double"
+docstring-code-format = true
+
